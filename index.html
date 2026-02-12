@@ -23,5 +23,11 @@
   <p>BH Pricing is a Shopify app that applies automatic order discounts for local delivery and pickup customers.</p>
   <p>This app is privately distributed and not available for public installation.</p>
   <p>For support, contact <a href="mailto:support@badhambres.com">support@badhambres.com</a>.</p>
+  <script>
+    // Retrieve a session token so Shopify can verify the app uses token-based auth
+    if (window.shopify) {
+      shopify.idToken();
+    }
+  </script>
 </body>
 </html>
